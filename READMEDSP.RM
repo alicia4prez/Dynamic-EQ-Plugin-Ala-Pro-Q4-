@@ -1,0 +1,7 @@
+he Anatomy of This DSP Engine
+The Envelope Follower (env_detect): It tracks the audio amplitude and generates a smoothed control signal based on your exact attack and release parameters.
+
+The Dynamic Logic: We calculate how far the signal breaches the threshold (slider5) and scale it towards the max Dynamic Range (slider4).
+
+Coefficient Recalculation: The biquad coefficients are updated dynamically in real-time as the gain modulates. Recalculating the math via trig identities per-sample is incredibly precise, 
+though as we scale this up to 12 or 24 bands, we will eventually need to implement coefficient interpolation to optimize CPU usage.
