@@ -1,4 +1,4 @@
-he Anatomy of This DSP Engine
+The Anatomy of This DSP Engine
 The Envelope Follower (env_detect): It tracks the audio amplitude and generates a smoothed control signal based on your exact attack and release parameters.
 
 The Dynamic Logic: We calculate how far the signal breaches the threshold (slider5) and scale it towards the max Dynamic Range (slider4).
